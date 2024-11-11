@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Явное указание окончания строк LF для кода, чтобы избежать CRLF-конфликтов
+*.sh text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+
+# Для markdown, документации и файлов с произвольными окончаниями
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
